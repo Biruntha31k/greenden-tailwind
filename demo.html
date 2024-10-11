@@ -1,0 +1,99 @@
+<style>
+    .container {
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+        background-color: skyblue;
+        font-size: large;
+    }
+
+    .header {
+        background-color: #03BFB2;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        background-color: #03BFB2;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .middle {
+        background-color: skyblue;
+        color: white;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .aside {
+        background-color: #6EDA6D;
+        color: white;
+        height: 300px;
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .article {
+        background-color: #FBB04D;
+        color: white;
+        padding: 10px;
+        height: 300px;
+        margin: 10px;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        justify-content: center;
+        align-self: center;
+    }
+
+    p{
+        margin-top: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container{
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px; 
+        align-self: end;
+    }
+
+    .image {
+        background-color: #FDD24A;
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<div class="container">
+    <div class="header">Header</div>
+    <div class="middle">
+        <div class="aside">Aside</div>
+        <div class="article">
+            <p>Article</p>
+            <div class="image-container">
+                <div class="image">Image</div>
+                <div class="image">Image</div>
+                <div class="image">Image</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">Footer</div>
+</div>
